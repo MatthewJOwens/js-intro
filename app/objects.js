@@ -7,6 +7,15 @@
 // array.Inside the array, include at least 4 values.
 let goodDoggo = {
   //your code in here
+  name: "Stein",
+  legs: 4,
+  tail: false,
+  likes: [
+    tennis,
+    antropology,
+    brisket,
+    jogging
+  ]
 }
 
 
@@ -14,6 +23,7 @@ let goodDoggo = {
 function howManyLegs() {
   // your code inside here
   // don't forget to use the return keyword
+  return goodDoggo.legs;
 }
 
 // Cat Challenges
