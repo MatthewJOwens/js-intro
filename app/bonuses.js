@@ -2,5 +2,12 @@
 let str = "team number 2"
 
 function camelCase(str) {
-
+  str = str.toLowerCase()
+  let words = str.split(' ')
+  let result = words[0]
+  for (let i = 1; i < words.length; i++) {
+    result += words[i].charAt(0).toUpperCase() + words[i].slice(1);
+  }
+  return result
 }
+
