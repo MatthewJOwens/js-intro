@@ -11,10 +11,10 @@ let goodDoggo = {
   legs: 4,
   tail: false,
   likes: [
-    tennis,
-    antropology,
-    brisket,
-    jogging
+    "tennis",
+    "antropology",
+    "brisket",
+    "jogging"
   ]
 }
 
@@ -40,6 +40,8 @@ let cat = {
 // the value of the name property.
 function renameCat() {
   // your code inside here
+  cat.name = "Kevin"
+  return cat.name
 }
 
 // Create a function that uses dot or bracket notation to create a property 
@@ -48,10 +50,13 @@ function renameCat() {
 
 function colorTheCat() {
   // your code inside here
+  cat.color = "black"
+  return cat.color
 }
 
 // Delete the whiskers property off of the cat object. You may use either dot or bracket notation.
 
+delete cat.whiskers
 
 // Write a function that uses dot AND bracket notation to access and return the 
 // value of the fourth item in the likes array("pets"). 
@@ -59,4 +64,5 @@ function colorTheCat() {
 
 function returnIndex(cat) {
   // your code inside here
+  return cat.likes[3]
 }
