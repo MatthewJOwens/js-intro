@@ -135,7 +135,7 @@ function golfScore(score, par) {
     let result = score - par;
     if (score == 1) {
         return "Ace";
-    } else if (difference >= 3) {
+    } else if (result >= 3) {
         return "Ouch";
     } else {
         switch (result) {
